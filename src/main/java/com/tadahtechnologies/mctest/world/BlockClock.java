@@ -48,7 +48,7 @@ public class BlockClock {
             //No change;
             return;
         }
-        
+
         //Clear previous
         WorldLetter letter = this.letters.get(index);
 

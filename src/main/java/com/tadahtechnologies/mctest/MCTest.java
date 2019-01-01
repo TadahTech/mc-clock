@@ -13,15 +13,8 @@ import java.time.ZonedDateTime;
 
 public final class MCTest extends JavaPlugin implements Listener {
 
-    private static MCTest instance;
-
-    public static MCTest getInstance() {
-        return instance;
-    }
-
     @Override
     public void onEnable() {
-        instance = this;
         getServer().getPluginManager().registerEvents(this, this);
 
         //This is just for example display purposes
