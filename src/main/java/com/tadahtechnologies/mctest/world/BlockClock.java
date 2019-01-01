@@ -42,14 +42,13 @@ public class BlockClock {
 
     public void updateClock() {
         String newString = FORMAT.format(this.dateTime);
+        int index = StringUtils.indexOfDifference(newString, this.lastDateTime);
 
-        if (this.lastDateTime.equalsIgnoreCase(newString)) {
+        if (index == -1) {
             //No change;
             return;
         }
-
-        int index = StringUtils.indexOfDifference(newString, this.lastDateTime);
-
+        
         //Clear previous
         WorldLetter letter = this.letters.get(index);
 
