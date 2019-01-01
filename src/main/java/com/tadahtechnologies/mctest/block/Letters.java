@@ -221,8 +221,7 @@ public enum Letters {
       "X X", //
       "X X", //
       "X X", //
-      "XXX"),
-   ;
+      "XXX"),;
 
     private static Map<String, BlockFormat> LETTERS = Maps.newHashMap();
 
@@ -230,10 +229,10 @@ public enum Letters {
         for (Letters letters : values()) {
             LETTERS.put(letters.letter.toLowerCase(), new BlockFormat(letters.pattern));
         }
-        LETTERS.put(":", new BlockFormat(" X ", "   ", " X "));
-        LETTERS.put("/", new BlockFormat("  X", " X ", "X  "));
-        LETTERS.put("-", new BlockFormat("  ", "XXX", "   "));
-        LETTERS.put(" ", new BlockFormat("   ", "   ", "   "));
+
+        LETTERS.put(":", new BlockFormat("   ", " X ", "   ", " X ", "   "));
+        LETTERS.put("-", new BlockFormat("  ", "   ", "XXX", "   ", "   "));
+        LETTERS.put(" ", new BlockFormat("   ", "   ", "   ", "   ", "   "));
     }
 
 
