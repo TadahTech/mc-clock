@@ -1,0 +1,3 @@
+name: MCTest
+version: ${project.version}
+main: com.tadahtechnologies.mctest.MCTest
